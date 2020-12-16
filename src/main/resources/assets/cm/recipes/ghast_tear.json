@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "CCC",
+        "CAC",
+        "CCC"
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "minecraft:quartz"
+        },
+        
+        "A":
+        {
+        	"item": "minecraft:ender_pearl"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:ghast_tear",
+        "count": 1
+    }
+}

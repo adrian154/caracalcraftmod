@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "   ",
+        "CAC",
+        "   "
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "minecraft:coal",
+            "data": 1
+        },
+        
+        "A":
+        {
+        	"item": "cm:saltpeter"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:gunpowder",
+        "count": 2
+    }
+}

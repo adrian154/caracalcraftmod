@@ -1,0 +1,18 @@
+item.test.name=Test
+
+item.fried_egg.name=Fried Egg
+item.fish_and_fish.name=Fish and Fish
+
+item.guano.name=Guano
+item.saltpeter.name=Saltpeter
+
+tile.test_block.name=Block of Test
+
+tile.compressed_cobblestone.name=Compressed Cobblestone
+
+tile.beef_block.name=Block of Beef
+tile.pork_block.name=Block of Pork
+tile.chicken_block.name=Block of Chicken
+
+enchantment.sand_strider=Sand Strider
+enchantment.ablaze=Ablaze

@@ -1,0 +1,24 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+ 
+    "ingredients": 
+    [
+ 
+    {
+      "item": "minecraft:glass",
+      "data": 0
+    },
+    
+    {
+      "item": "minecraft:blaze_powder",
+      "data": 0
+    }
+    
+    ],
+ 
+    "result": 
+    {
+        "item": "minecraft:glowstone",
+        "count": 1
+    }
+}
