@@ -1,0 +1,29 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+ 
+    "ingredients": 
+    [
+ 
+    {
+      "item": "minecraft:spider_eye",
+      "data": 0
+    },
+    
+    {
+      "item": "minecraft:netherrack",
+      "data": 0
+    },
+    
+    {
+      "item": "minecraft:red_mushroom",
+      "data": 0
+    }
+    
+    ],
+ 
+    "result": 
+    {
+        "item": "minecraft:nether_wart",
+        "count": 1
+    }
+}

@@ -39,7 +39,7 @@ public class Ablaze extends EnchantmentBase {
 			World world = event.getEntity().world;
 			
 			if(player.isBurning() && level > 0) {
-				player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, (10), level-1, false, false));
+				player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, (2*20), level-1, false, false));
 			}
 		}
 		
