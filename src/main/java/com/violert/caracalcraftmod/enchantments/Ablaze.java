@@ -9,6 +9,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.enchantment.Enchantment.Rarity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -31,13 +32,15 @@ public class Ablaze extends EnchantmentBase {
 	@SubscribeEvent
 	public static void effectAblaze(LivingUpdateEvent event) {
 		
-		EntityLivingBase player = event.getEntityLiving();
-		int level = EnchantmentHelper.getMaxEnchantmentLevel(ModEnchantments.ABLAZE, player);
-		BlockPos pos = player.getPosition();
-		World world = event.getEntity().world;
-		
-		if(player.isBurning() && level > 0) {
-			player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, (10), level-1, false, false));
+		if(event.getEntityLiving() instanceof EntityPlayer) {
+			EntityPlayer player = (EntityPlayer) event.getEntityLiving();
+			int level = EnchantmentHelper.getMaxEnchantmentLevel(ModEnchantments.ABLAZE, player);
+			BlockPos pos = player.getPosition();
+			World world = event.getEntity().world;
+			
+			if(player.isBurning() && level > 0) {
+				player.addPotionEffect(new PotionEffect(MobEffects.STRENGTH, (10), level-1, false, false));
+			}
 		}
 		
 	}

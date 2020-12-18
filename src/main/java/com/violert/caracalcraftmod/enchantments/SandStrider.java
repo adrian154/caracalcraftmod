@@ -8,6 +8,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -30,15 +31,17 @@ public class SandStrider extends EnchantmentBase {
 	@SubscribeEvent
 	public static void effectSandStrider(LivingUpdateEvent event) {
 		
-		EntityLivingBase player = event.getEntityLiving();
-		int level = EnchantmentHelper.getMaxEnchantmentLevel(ModEnchantments.SAND_STRIDER, player);
-		BlockPos pos = player.getPosition();
-		World world = event.getEntity().world;
-		
-		BlockPos posBelow = pos.down();
-		IBlockState blockStateBelow = player.world.getBlockState(posBelow);
-		if(Block.isEqualTo(blockStateBelow.getBlock(), Blocks.SAND) && level > 0) {
-			player.addPotionEffect(new PotionEffect(MobEffects.SPEED, (1*20), level-1, false, false));
+		if(event.getEntityLiving() instanceof EntityPlayer) {
+			EntityPlayer player = (EntityPlayer)event.getEntityLiving();
+			int level = EnchantmentHelper.getMaxEnchantmentLevel(ModEnchantments.SAND_STRIDER, player);
+			BlockPos pos = player.getPosition();
+			World world = event.getEntity().world;
+			
+			BlockPos posBelow = pos.down();
+			IBlockState blockStateBelow = player.world.getBlockState(posBelow);
+			if(Block.isEqualTo(blockStateBelow.getBlock(), Blocks.SAND) && level > 0) {
+				player.addPotionEffect(new PotionEffect(MobEffects.SPEED, (1*20), level-1, false, false));
+			}
 		}
 		
 	}
