@@ -15,9 +15,9 @@ public class MobEventHandler {
 			if(event.getEntity().getEntityWorld().isRemote == false) {
 				double chance = Math.random();
 				if(chance < 0.5) {
-					event.getEntity().dropItem(ModItems.GUANO, 1);
+					event.getEntity().dropItem(ModItems.GUANO, 0);
 				} else {
-					event.getEntity().dropItem(ModItems.GUANO, 2);
+					event.getEntity().dropItem(ModItems.GUANO, 1);
 				}
 			}
 		}

@@ -6,6 +6,7 @@ import java.util.List;
 import com.violert.caracalcraftmod.blocks.BlockBase;
 import com.violert.caracalcraftmod.blocks.BlockFormat;
 import com.violert.caracalcraftmod.blocks.CompressedCobblestone;
+import com.violert.caracalcraftmod.blocks.LauncherBlock;
 import com.violert.caracalcraftmod.blocks.TestBlock;
 
 import net.minecraft.block.Block;
@@ -23,5 +24,8 @@ public class ModBlocks {
 	public static final Block BEEF_BLOCK = new BlockFormat("beef_block", Material.GRASS, SoundType.SLIME, 0.25f, 1.0f, null, 0);
 	public static final Block PORK_BLOCK = new BlockFormat("pork_block", Material.GRASS, SoundType.SLIME, 0.25f, 1.0f, null, 0);
 	public static final Block CHICKEN_BLOCK = new BlockFormat("chicken_block", Material.GRASS, SoundType.SLIME, 0.25f, 1.0f, null, 0);
+	
+	public static final Block LAUNCHER = new LauncherBlock("launcher", Material.IRON, SoundType.METAL, 1f, 1f, "pickaxe", 2, 2);
+	
 	
 }

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "CCC",
+        "CAC",
+        "CCC"
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        
+        "A":
+        {
+        	"item": "minecraft:piston"
+        }
+    },
+    
+    "result":
+    {
+        "item": "cm:launcher",
+        "count": 1
+    }
+}

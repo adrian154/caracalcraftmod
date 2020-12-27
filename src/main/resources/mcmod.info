@@ -2,13 +2,13 @@
 {
   "modid": "cm",
   "name": "Caracal Craft Mod",
-  "description": "the awesome mod",
-  "version": "1.0.1",
+  "description": "Mod for the Caracal Craft Minecraft Server",
+  "version": "1.1.0",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
   "authorList": ["violert"],
-  "credits": "me and only me",
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

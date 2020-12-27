@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "CC",
+        "CC"
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "minecraft:milk_bucket"
+        }
+    },
+    
+    "result":
+    {
+        "item": "cm:milk_curds",
+        "count": 1
+    }
+}

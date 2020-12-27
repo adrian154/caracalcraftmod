@@ -3,12 +3,17 @@ item.test.name=Test
 item.fried_egg.name=Fried Egg
 item.fish_and_fish.name=Fish and Fish
 
+item.milk_curds.name=Milk Curds
+item.cheese.name=Cheese
+
 item.guano.name=Guano
 item.saltpeter.name=Saltpeter
 
 tile.test_block.name=Block of Test
 
 tile.compressed_cobblestone.name=Compressed Cobblestone
+
+tile.launcher.name=Launcher
 
 tile.beef_block.name=Block of Beef
 tile.pork_block.name=Block of Pork
