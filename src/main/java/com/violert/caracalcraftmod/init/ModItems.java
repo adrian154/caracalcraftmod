@@ -6,6 +6,8 @@ import java.util.List;
 import com.violert.caracalcraftmod.items.FoodBase;
 import com.violert.caracalcraftmod.items.FoodEffectBase;
 import com.violert.caracalcraftmod.items.ItemBase;
+import com.violert.caracalcraftmod.items.XPCompressor;
+import com.violert.caracalcraftmod.items.XPCube;
 
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
@@ -25,5 +27,10 @@ public class ModItems {
 	
 	public static final Item MILK_CURDS = new FoodBase("milk_curds", 4, 1f, false);
 	public static final Item CHEESE = new FoodBase("cheese", 6, 3f, false);
+	
+	public static final Item XP_COMPRESSOR = new XPCompressor("xp_compressor", 10, 1);
+	public static final Item XP_CUBE = new XPCube("xp_cube", 0, 0f, false);
+	
+	public static final Item DYNAMITE = new ItemBase("dynamite");
 	
 }

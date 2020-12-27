@@ -3,9 +3,9 @@
     
     "pattern":
     [
-        "CCC",
+        "CDC",
         "CAC",
-        "CCC"
+        "CDC"
     ],
     
     "key":
@@ -18,12 +18,17 @@
         "A":
         {
         	"item": "minecraft:piston"
+        },
+        
+        "D":
+        {
+        	"item": "minecraft:diamond" 
         }
     },
     
     "result":
     {
         "item": "cm:launcher",
-        "count": 1
+        "count": 2
     }
 }

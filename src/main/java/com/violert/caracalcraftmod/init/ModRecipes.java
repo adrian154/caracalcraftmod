@@ -16,7 +16,7 @@ public class ModRecipes {
 		
 		GameRegistry.addSmelting(ModItems.GUANO, new ItemStack(ModItems.SALTPETER, 1), 2f);
 		
-		GameRegistry.addSmelting(ModItems.MILK_CURDS, new ItemStack(ModItems.CHEESE),  2f);
+		GameRegistry.addSmelting(ModItems.MILK_CURDS, new ItemStack(ModItems.CHEESE),  2f);		
 		
 	}
 	

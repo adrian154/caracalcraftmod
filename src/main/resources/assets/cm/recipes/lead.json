@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "SS ",
+        "SI ",
+        "  S"
+    ],
+    
+    "key":
+    {   
+        "I":
+        {
+        	"item": "cm:milk_curds"
+        },
+        
+        "S":
+        {
+        	"item": "minecraft:string"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:lead",
+        "count": 2
+    }
+}

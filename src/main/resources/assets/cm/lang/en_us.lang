@@ -9,6 +9,11 @@ item.cheese.name=Cheese
 item.guano.name=Guano
 item.saltpeter.name=Saltpeter
 
+item.xp_compressor.name=Experience Compressor
+item.xp_cube.name=Experience Cube
+
+item.dynamite=Stick of Dynamite
+
 tile.test_block.name=Block of Test
 
 tile.compressed_cobblestone.name=Compressed Cobblestone

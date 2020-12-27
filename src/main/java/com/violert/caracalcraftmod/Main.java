@@ -3,6 +3,7 @@ package com.violert.caracalcraftmod;
 import com.violert.caracalcraftmod.init.ModRecipes;
 import com.violert.caracalcraftmod.proxy.CommonProxy;
 import com.violert.caracalcraftmod.util.Reference;
+import com.violert.caracalcraftmod.util.handler.CraftingHandler;
 import com.violert.caracalcraftmod.util.handler.MobEventHandler;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -25,6 +26,8 @@ public class Main {
 	
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
+		
+		CraftingHandler.removeRecipes();
 		
 	}
 	
